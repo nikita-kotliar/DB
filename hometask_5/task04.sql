@@ -1,0 +1,7 @@
+USE publishing;
+
+-- Задача 4. Агрегація і групування
+SELECT b.Genre, COUNT(*) AS BooksCount
+FROM books b
+GROUP BY b.Genre
+ORDER BY BooksCount DESC;
